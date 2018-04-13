@@ -9,11 +9,8 @@ hooks:
     - location: scripts/stop_application.sh
       timeout: 300
       runas: root
-  BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
-      runas: root
   ApplicationStart:
+    - location: scripts/install_dependencies.sh
     - location: scripts/start_application.sh
     - location: scripts/register_with_elb-wrapper.sh
       timeout: 330
