@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -ex
 
 app_home=/opt/sites/helloworld
 
