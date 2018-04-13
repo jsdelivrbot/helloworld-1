@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /*.*
-    destination: /tmp/codedeploy-deployment/
+  - source: /
+    destination: /tmp/codedeploy-deployment
 hooks:
   ApplicationStop:
     - location: scripts/deregister_from_elb-wrapper.sh
