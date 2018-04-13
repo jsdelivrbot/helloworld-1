@@ -17,8 +17,6 @@ cd $app_home
 
 unzip helloworld
 
-cd $app_home/helloworld
-
 mv helloworld.service /etc/init.d/helloworld
 npm config set strict-ssl false
 npm install
