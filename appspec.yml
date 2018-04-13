@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /helloworld.zip
-    destination: /tmp/codedeploy-deployment
+    destination: /tmp/codedeploy-deployment/
 hooks:
   ApplicationStop:
     - location: scripts/deregister_from_elb-wrapper.sh
