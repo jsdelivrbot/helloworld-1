@@ -10,7 +10,7 @@
 
 
 start() {
-  cd /opt/sites/helloworld/helloworld
+  cd /opt/sites/helloworld
   ./helloworld-start.sh
   echo 'Service started' >&2
 }
