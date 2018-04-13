@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: helloworld.zip
+  - source: /helloworld.zip
     destination: /tmp/codedeploy-deployment
 hooks:
   ApplicationStop:

@@ -15,7 +15,7 @@ cp -R /tmp/codedeploy-deployment/helloworld.zip $app_home/.
 
 cd $app_home
 
-unzip helloworld
+unzip -o helloworld
 
 mv helloworld.service /etc/init.d/helloworld
 npm config set strict-ssl false
