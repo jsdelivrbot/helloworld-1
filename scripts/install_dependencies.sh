@@ -28,4 +28,5 @@ chmod +x /etc/init.d/helloworld
 chkconfig helloworld on
 
 rm $app_home/helloworld -rf
+rm /tmp/codedeploy-deployment/helloworld.zip
 
