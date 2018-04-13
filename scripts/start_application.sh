@@ -1,4 +1,4 @@
 #!/bin/bash
 set -x
 
-npm start
+service helloworld start
