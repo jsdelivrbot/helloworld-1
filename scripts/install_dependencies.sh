@@ -11,9 +11,14 @@ yum -y groupinstall development
 
 cd $app_home
 
-cp -R /tmp/codedeploy-deployment/* $app_home
+cp -R /tmp/codedeploy-deployment/helloworld.zip $app_home/.
 
 cd $app_home
+
+unzip helloworld
+
+cd $app_home/helloworld
+
 mv helloworld.service /etc/init.d/helloworld
 npm config set strict-ssl false
 npm install
@@ -23,4 +28,6 @@ chown -R ec2-user:ec2-user $app_home
 
 chmod +x /etc/init.d/helloworld
 chkconfig helloworld on
+
+rm $app_home/helloworld -rf
 

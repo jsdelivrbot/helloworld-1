@@ -1,18 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: public
-    destination: /opt/sites/helloworld
-  - source: *.json
-    destination: /opt/sites/helloworld
-  - source: Procfile
-    destination: /opt/sites/helloworld
-  - source: *.js
-    destination: /opt/sites/helloworld
-  - source: *.service 
-    destination: /etc/init.d
-  - source: *.sh 
-    destination: /opt/sites/helloworld
+  - source: helloworld.zip
+    destination: /tmp/codedeploy-deployment
 hooks:
   ApplicationStop:
     - location: scripts/deregister_from_elb-wrapper.sh
